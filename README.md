@@ -22,6 +22,6 @@ Python >= 3.6
 >>> python app.py [host] [port] # default localhost:5000
 ```
 
-# Latexの書き方
-* inline mathematics <pre>$数式$</pre>
-* displayed equations <pre>$$数式$$</pre>
+# Latex
+* inline mathematics <pre>$formula$</pre>
+* displayed equations <pre>$$formula$$</pre>
