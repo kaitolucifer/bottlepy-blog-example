@@ -14,6 +14,8 @@
   0. You just DO WHAT THE FUCK YOU WANT TO.
 </pre>
 
+# A simple japanese blog implemented with bottle-py framework.
+
 # Usage
 Python >= 3.6
 
