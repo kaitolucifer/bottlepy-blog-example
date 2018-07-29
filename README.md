@@ -1,3 +1,5 @@
+# A Simple Japanese Blog Inplemented With Bottle.py Framework.
+
 <pre>
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, December 2004
@@ -14,9 +16,7 @@
   0. You just DO WHAT THE FUCK YOU WANT TO.
 </pre>
 
-# A simple Japanese blog implemented with bottle-py framework.
-
-# Usage
+### Usage
 Python >= 3.6
 
 ```python
@@ -24,6 +24,6 @@ Python >= 3.6
 >>> python app.py [host] [port] # default localhost:5000
 ```
 
-# Latex
+### Latex
 * inline mathematics <pre>$formula$</pre>
 * displayed equations <pre>$$formula$$</pre>
