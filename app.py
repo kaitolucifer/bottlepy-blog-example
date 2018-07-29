@@ -1,7 +1,3 @@
-# 氏名：王海東
-# 学籍番号：1J16F035-6
-# 2018年7月27日
-
 import os, sys
 from math import ceil
 from bottle import (run, route, error, get, post, view, template,
