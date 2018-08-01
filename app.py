@@ -30,15 +30,15 @@ PER_PAGE = 10
 
 
 # 静的ファイル
-@route('/static/<filename:re:.*\.css>')
+@route(r'/static/<filename:re:.*\.css>')
 def send_css(filename):
     return static_file(filename, root='static/css')
 
-@route('/static/<filename:re:.*\.js>')
+@route(r'/static/<filename:re:.*\.js>')
 def send_js(filename):
     return static_file(filename, root='static/js')
 
-@route('/<filename:re:.*\.ico>')
+@route(r'/<filename:re:.*\.ico>')
 def send_favicon(filename):
     return static_file(filename, root='static/')
 
