@@ -2,7 +2,7 @@
     <h2>{{ head }}</h2>
     % for article in articles:
     <div class="pane panel panel-info">
-        <div class="panel-body">
+        <div class="panel-body" style="position:relative;overflow:hidden;height:400px;">
             <div class="media">
                 % import re
                 % pattern = re.compile(r'!\[.*\]\((.+)\)')
@@ -19,14 +19,21 @@
                 <!-- % content = article[3] -->
                 % end
                 <div class="media-body">
-                    <a href="/article/{{ article[0] }}" class="media-heading" style="font-weight:bold;color:#708090;font-size:250%;">{{ article[2] }}</a>
+                    <div style="position:relative;overflow:hidden;max-height:100px;">
+                        <a href="/article/{{ article[0] }}" class="media-heading" title="{{ article[2] }}" style="font-weight:bold;color:#708090;font-size:250%;">
+                            {{ article[2] }}
+                        </a>
+                    </div>
                     <hr />
-                    <a href="/article/{{ article[0] }}" style="color:#778899;">{{ article[3][:200] }}...</a>
+                    <div style="position:relative;overflow:hidden;max-height:200px;">
+                        <a href="/article/{{ article[0] }}" style="color:#778899;">{{ article[3] }}</a>
+                    </div>
+                    ...
                     <div class="btn-group btn-group-sm"><a class="btn btn-default" href="/article/{{ article[0] }}">続きを読む</a></div>
                     <div class="clearfix"></div>               
                 </div>
             </div>
-            <span class="label label-info" style="float:right;">{{ article[1] }}</span>
+            <span class="label label-info" style="position:absolute;right:5px;bottom:5px;">{{ article[1] }}</span>
         </div>
     </div>
     % end
@@ -41,9 +48,9 @@
             % end
             % for i in range(page_num):
             % if i == current_page:
-            <li class="active"><a = href='/articles/{{ i }}'>{{ i+1 }}</a></li>
+            <li class="active"><a = href="/articles/{{ i }}">{{ i+1 }}</a></li>
             % else:
-            <li><a = href='/articles/{{ i }}'>{{ i+1 }}</a></li>
+            <li><a = href="/articles/{{ i }}">{{ i+1 }}</a></li>
             % end
             % end
             % if current_page == page_num - 1:
