@@ -30,7 +30,7 @@
                     </div>
                     ...
                     <div class="btn-group btn-group-sm"><a class="btn btn-default" href="/article/{{ article[0] }}">続きを読む</a></div>
-                    <div class="clearfix"></div>               
+                    <div class="clearfix"></div>
                 </div>
             </div>
             <span class="label label-info" style="position:absolute;right:5px;bottom:5px;">{{ article[1] }}</span>
