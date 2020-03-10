@@ -1,5 +1,8 @@
 # A Simple Japanese Blog Inplemented With Bottle.py Framework.
 
+### Design
+![](https://github.com/kaitolucifer/bottlepy-blog-example/blob/master/test_1.png)
+![](https://github.com/kaitolucifer/bottlepy-blog-example/blob/master/test_2.png)
 
 ### Usage
 Python >= 3.6
